@@ -1,19 +1,26 @@
 ---Build A Boat For Treasure
 ---Auto Farm Gold
 
+---Wait 20 Second To Start.
+
 print("Auto Farm Gold Loaded!")
 
 
 
 
 
+
+
+T = 10
+
+for i = 1, T do
 ---#Start
 
-wait(1)
+wait(20)
 local teleport_table = {
     location1 = Vector3.new(84.40873718261719, -7.10002326965332, 1101.19873046875), -- your desired position
 
-    location2 = Vector3.new(-37.61335372924805, 43.4493293762207, 3877.1005859375),  -- your desired position
+    location2 = Vector3.new(84.40873718261719, -7.10002326965332, 1101.19873046875),  -- your desired position
 }
 
 local tween_s = game:GetService('TweenService')
@@ -307,7 +314,7 @@ bypass_teleport(teleport_table.location1)
 
 ---Chest
 
-wait(1)
+wait(3)
 local teleport_table = {
     location1 = Vector3.new(-55.856101989746094, -357.4244689941406, 9490.4912109375), -- your desired position
     location2 = Vector3.new(-55.856101989746094, -357.4244689941406, 9490.4912109375)  -- your desired position
@@ -330,3 +337,4 @@ function bypass_teleport(v)
 end
 
 bypass_teleport(teleport_table.location1)
+end
