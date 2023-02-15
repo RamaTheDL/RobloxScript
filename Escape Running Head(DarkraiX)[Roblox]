@@ -1,0 +1,857 @@
+---Escape Running Head.
+
+
+
+
+
+-------DarkraiX
+
+local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
+
+local Library = DarkraiX:Window("DarkraiX","","",Enum.KeyCode.RightControl);
+
+Tab1 = Library:Tab("Escape Head")
+
+Tab1:Button("Stage 1" ,function()
+     -------GUI
+---Coin
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-379.94512939453125, 12.69936466217041, 3.7633581161499023), -- your desired position
+    location2 = Vector3.new(-379.94512939453125, 12.69936466217041, 3.7633581161499023)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Door
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-405.93365478515625, 12.69936466217041, 3.794677495956421), -- your desired position
+    location2 = Vector3.new(-405.93365478515625, 12.69936466217041, 3.794677495956421)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+end)
+
+
+-------------------------Stage 2
+Tab1:Button("Stage 2" ,function()
+     ---Wall
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-736.46728515625, 44.699012756347656, -94.03321075439453), -- your desired position
+    location2 = Vector3.new(-736.46728515625, 44.699012756347656, -94.03321075439453)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Wall 2
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-1061.736572265625, 44.699256896972656, 36.25003433227539), -- your desired position
+    location2 = Vector3.new(-1061.736572265625, 44.699256896972656, 36.25003433227539)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Coin
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-1090.9920654296875, 2.699998617172241, 37.784149169921875), -- your desired position
+    location2 = Vector3.new(-1090.9920654296875, 2.699998617172241, 37.784149169921875)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Door
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-1120.932373046875, 6.2000017166137695, 39.1876335144043), -- your desired position
+    location2 = Vector3.new(-1120.932373046875, 6.2000017166137695, 39.1876335144043)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+end)
+
+
+-------------------------Stage 3
+Tab1:Button("Stage 3" ,function()
+     ---Coin
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-343.60302734375, 14.699995994567871, -5.992115020751953), -- your desired position
+    location2 = Vector3.new(-343.60302734375, 14.699995994567871, -5.992115020751953)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Door
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-399.86761474609375, 14.699995994567871, -6.365667819976807), -- your desired position
+    location2 = Vector3.new(-399.86761474609375, 14.699995994567871, -6.365667819976807)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+end)
+
+
+-------------------------Stage 4
+Tab1:Button("Stage 4" ,function()
+     ---Wall
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-505.7224426269531, 154.69979858398438, -48.02397918701172), -- your desired position
+    location2 = Vector3.new(-505.7224426269531, 154.69979858398438, -48.02397918701172)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Wall 2
+wait(2)
+local teleport_table = {
+    location1 = Vector3.new(-680.443115234375, 155.19891357421875, -68.80764770507812), -- your desired position
+    location2 = Vector3.new(-680.443115234375, 155.19891357421875, -68.80764770507812)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Coin
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-682.0573120117188, 117.69990539550781, -98.26201629638672), -- your desired position
+    location2 = Vector3.new(-682.0573120117188, 117.69990539550781, -98.26201629638672)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Door
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-682.437744140625, 117.69990539550781, -126.1177749633789), -- your desired position
+    location2 = Vector3.new(-682.437744140625, 117.69990539550781, -126.1177749633789)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+end)
+
+
+-------------------------Stage 5
+Tab1:Button("Stage 5" ,function()
+     ---Coin
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-1600.142822265625, 45.699989318847656, -73.91033935546875), -- your desired position
+    location2 = Vector3.new(-1600.142822265625, 45.699989318847656, -73.91033935546875)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Door
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-1660.4879150390625, 45.699989318847656, -74.75313568115234), -- your desired position
+    location2 = Vector3.new(-1660.4879150390625, 45.699989318847656, -74.75313568115234)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+end)
+
+
+-------------------------Stage 6
+Tab1:Button("Stage 6" ,function()
+     ---Wall
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-736.6759643554688, 44.89930725097656, -88.66938018798828), -- your desired position
+    location2 = Vector3.new(-736.6759643554688, 44.89930725097656, -88.66938018798828)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Wall 2
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-1383.453857421875, 44.89929962158203, -57.77219772338867), -- your desired position
+    location2 = Vector3.new(-1383.453857421875, 44.89929962158203, -57.77219772338867)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Coin
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-1421.817626953125, 2.6999990940093994, -53.47754669189453), -- your desired position
+    location2 = Vector3.new(-1421.817626953125, 2.6999990940093994, -53.47754669189453)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Door
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(-1451.7314453125, 2.6999995708465576, -54.590965270996094), -- your desired position
+    location2 = Vector3.new(-1451.7314453125, 2.6999995708465576, -54.590965270996094)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+end)
+
+
+-------------------------Stage 7
+Tab1:Button("Stage 7" ,function()
+     ---Green Spawnpoint
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(420.22186279296875, 18.758785247802734, 372.9088439941406), -- your desired position
+    location2 = Vector3.new(420.22186279296875, 18.758785247802734, 372.9088439941406)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Stair
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(654.5899658203125, 27.69900131225586, 371.8455505371094), -- your desired position
+    location2 = Vector3.new(654.5899658203125, 27.69900131225586, 371.8455505371094)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+
+---Green Spawnpoint 2
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(893.8058471679688, 32.81744384765625, 373.2889404296875), -- your desired position
+    location2 = Vector3.new(893.8058471679688, 32.81744384765625, 373.2889404296875)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Stair 2
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(1510.248779296875, 53.697933197021484, 370.6499938964844), -- your desired position
+    location2 = Vector3.new(1510.248779296875, 53.697933197021484, 370.6499938964844)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Coin
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(1685.86572265625, 17.697933197021484, 371.9765625), -- your desired position
+    location2 = Vector3.new(1685.86572265625, 17.697933197021484, 371.9765625)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Door
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(1706.8487548828125, 17.697933197021484, 371.2867126464844), -- your desired position
+    location2 = Vector3.new(1706.8487548828125, 17.697933197021484, 371.2867126464844)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+end)
+
+
+-------------------------Stage 8
+Tab1:Button("Stage 8" ,function()
+     ---Height Wall
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(42.75318145751953, 469.4537353515625, 1130.044677734375), -- your desired position
+    location2 = Vector3.new(42.75318145751953, 469.4537353515625, 1130.044677734375)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Air
+wait(2)
+local teleport_table = {
+    location1 = Vector3.new(42.40515899658203, 216.8887481689453, -1161.28759765625), -- your desired position
+    location2 = Vector3.new(42.40515899658203, 216.8887481689453, -1161.28759765625)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Coin
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(42.75761032104492, 49.453800201416016, -1171.0491943359375), -- your desired position
+    location2 = Vector3.new(42.75761032104492, 49.453800201416016, -1171.0491943359375)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Door
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(42.20557403564453, 49.45380401611328, -1204.816162109375), -- your desired position
+    location2 = Vector3.new(42.20557403564453, 49.45380401611328, -1204.816162109375)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+
+
+Tab1:Button("Stage 9" ,function()
+     ---Air
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(254.2744140625, 178.4124298095703, 63.71187210083008), -- your desired position
+    location2 = Vector3.new(254.2744140625, 178.4124298095703, 63.71187210083008)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+     
+---Air 2
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(1524.148681640625, 168.27215576171875, -504.9372253417969), -- your desired position
+    location2 = Vector3.new(1524.148681640625, 168.27215576171875, -504.9372253417969)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Coin
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(1848.0152587890625, 43.45370864868164, -495.02947998046875), -- your desired position
+    location2 = Vector3.new(1848.0152587890625, 43.45370864868164, -495.02947998046875)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+
+---Door
+wait(1)
+local teleport_table = {
+    location1 = Vector3.new(1882.5848388671875, 43.45370864868164, -495.1349182128906), -- your desired position
+    location2 = Vector3.new(1882.5848388671875, 43.45370864868164, -495.1349182128906)  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+end)
+
+-------Notification
+wait(1.2)
+game.StarterGui:SetCore("SendNotification", {
+Title = "DarkraiX"; -- the title (ofc)
+Text = "Escape Running Head Loaded!"; -- what the text says (ofc)
+Icon = "rbxassetid://57254792"; -- the image if u want. 
+Duration = 5; -- how long the notification should in secounds
+})
