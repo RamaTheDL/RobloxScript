@@ -1,0 +1,24 @@
+---Made by GuestX
+
+---Notifcation
+wait(1.2)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Lag Chat"; -- the title (ofc)
+Text = "✓"; -- what the text says (ofc)
+Icon = "rbxassetid://57254792"; -- the image if u want. 
+Duration = 4; -- how long the notification should in secounds
+})
+
+---Script
+local Message = "🔥" 
+local Unicode = " "
+Message = Message .. Unicode:rep(200 - #Message)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SayMessageRequest = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+
+if SayMessageRequest then
+    for i = 1, 1 do
+        SayMessageRequest:FireServer(Message, "All")
+    end
+end
