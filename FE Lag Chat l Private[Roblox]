@@ -61,3 +61,17 @@ else
 end
   	end    
 })
+
+Tab:AddButton({
+	Name = "Get Key",
+	Callback = function()
+      		setclipboard("https://link-center.net/678621/key")
+OrionLib:MakeNotification({
+	Name = "Key",
+	Content = "Your Key Has Been Copying",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+  	end    
+})
