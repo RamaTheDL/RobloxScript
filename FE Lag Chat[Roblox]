@@ -1,4 +1,4 @@
-local OrionLib = loadstring((game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Lag Chat", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionLagChat"})
 local Tab = Window:MakeTab({
@@ -8,8 +8,8 @@ local Tab = Window:MakeTab({
 })
 
 OrionLib:MakeNotification({
-	Name = "Lag Chat",
-	Content = "Rama102031: Masih Beta Masbro:v",
+	Name = "Rama102031",
+	Content = "Masih Beta Masbro:v",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
