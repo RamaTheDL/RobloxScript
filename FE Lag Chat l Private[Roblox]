@@ -16,6 +16,7 @@ function ScriptHub()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/FE%20Lag%20Chat%5BRoblox%5D"))()
 end
 
+
 function CorrectKeyNotification()
 OrionLib:MakeNotification({
 	Name = "Correct Key!",
@@ -72,6 +73,6 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-          end
-  	end    
+
+  	end
 })
