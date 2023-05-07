@@ -68,7 +68,7 @@ Tab:AddButton({
       		setclipboard("https://link-center.net/678621/key")
 OrionLib:MakeNotification({
 	Name = "Key",
-	Content = "Your Key Has Been Copying",
+	Content = "Your Key Has Been Copying In Your Keyboard, Paste It In Your Browser.",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
