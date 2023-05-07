@@ -1,0 +1,223 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Lag Chat", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "Emoji",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+OrionLib:MakeNotification({
+	Name = "Lag Chat",
+	Content = "Rama102031: Masih Beta Masbro:v",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+Tab:AddButton({
+	Name = "💣",
+	Callback = function()
+      		---Made by GuestX
+local Message = "💣" 
+local Unicode = " "
+Message = Message .. Unicode:rep(200 - #Message)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SayMessageRequest = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+
+if SayMessageRequest then
+    for i = 1, 1 do
+        SayMessageRequest:FireServer(Message, "All")
+    end
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "🔥",
+	Callback = function()
+      		---Made by GuestX
+local Message = "🔥" 
+local Unicode = " "
+Message = Message .. Unicode:rep(200 - #Message)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SayMessageRequest = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+
+if SayMessageRequest then
+    for i = 1, 1 do
+        SayMessageRequest:FireServer(Message, "All")
+    end
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "⚠️",
+	Callback = function()
+      		---Made by GuestX
+local Message = "⚠️" 
+local Unicode = " "
+Message = Message .. Unicode:rep(200 - #Message)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SayMessageRequest = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+
+if SayMessageRequest then
+    for i = 1, 1 do
+        SayMessageRequest:FireServer(Message, "All")
+    end
+end
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "⏳",
+	Callback = function()
+      		---Made by GuestX
+local Message = "⏳" 
+local Unicode = " "
+Message = Message .. Unicode:rep(200 - #Message)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SayMessageRequest = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+
+if SayMessageRequest then
+    for i = 1, 1 do
+        SayMessageRequest:FireServer(Message, "All")
+    end
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "☠️",
+	Callback = function()
+      		---Made by GuestX
+local Message = "☠️" 
+local Unicode = " "
+Message = Message .. Unicode:rep(200 - #Message)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SayMessageRequest = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+
+if SayMessageRequest then
+    for i = 1, 1 do
+        SayMessageRequest:FireServer(Message, "All")
+    end
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "🧭",
+	Callback = function()
+      		---Made by GuestX
+local Message = "🧭" 
+local Unicode = " "
+Message = Message .. Unicode:rep(200 - #Message)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SayMessageRequest = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+
+if SayMessageRequest then
+    for i = 1, 1 do
+        SayMessageRequest:FireServer(Message, "All")
+    end
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "🃏",
+	Callback = function()
+      		---Made by GuestX
+local Message = "🃏" 
+local Unicode = " "
+Message = Message .. Unicode:rep(200 - #Message)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SayMessageRequest = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+
+if SayMessageRequest then
+    for i = 1, 1 do
+        SayMessageRequest:FireServer(Message, "All")
+    end
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "⛓️",
+	Callback = function()
+		---Made by GuestX
+local Message = "⛓️" 
+local Unicode = " "
+Message = Message .. Unicode:rep(200 - #Message)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SayMessageRequest = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+
+if SayMessageRequest then
+    for v = 1, 1 do
+        SayMessageRequest:FireServer(Message, "All")
+    end
+end
+	end    
+})
+
+Tab:AddButton({
+	Name = "Clear Chat",
+	Callback = function()
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(" ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻", "All")
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Special",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "GuestX!",
+	Callback = function()
+      		---Made by GuestX
+local Message = "🔥Made By GuestX☠️" 
+local Unicode = " "
+Message = Message .. Unicode:rep(200 - #Message)
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SayMessageRequest = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
+
+if SayMessageRequest then
+    for i = 1, 1 do
+        SayMessageRequest:FireServer(Message, "All")
+    end
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "🕛",
+	Callback = function()
+      		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🕕                                                                                                                                                                                                  ", "All")
+wait(0.7)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🕐                                                                                                                                                                                                  ", "All")
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🕒                                                                                                                                                                                                 ", "All")
+wait(0.7)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🕓                                                                                                                                                                                                  ", "All")
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🕔                                                                                                                                                                                                  ", "All")
+wait(0.7)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🕕                                                                                                                                                                                                ", "All")
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🕖                                                                                                                                                                                                ", "All")
+wait(0.7)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🕘                                                                                                                                                                                                 ", "All")
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🕚                                                                                                                                                                                                  ", "All")
+wait(0.7)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("🕛                                                                                                                                                                                                 ", "All")
+end    
+})
+
+OrionLib:Init()
