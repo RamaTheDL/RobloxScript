@@ -180,21 +180,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-
-_G.Players = "string"
-
-
-Tab:AddTextbox({
-	Name = "Player Name",
-	Default = "",
-	TextDisappear = false,
-	Callback = function(Value)
-		if _G.Players then
-		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Test", "player.name")
-	end	  
-})
-
-
 local Tab = Window:MakeTab({
 	Name = "Special",
 	Icon = "rbxassetid://4483345998",
