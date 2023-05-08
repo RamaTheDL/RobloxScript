@@ -12,7 +12,7 @@ OrionLib:MakeNotification({
 _G.Key = "js2bIkO2c8LpE2"
 _G.KeyInput = "string"
 
-function ScriptHub()
+function Script()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/FE%20Lag%20Chat%5BRoblox%5D"))()
 end
 
@@ -55,8 +55,8 @@ Tab:AddButton({
 	Name = "Check Key",
 	Callback = function()
       		if _G.KeyInput == _G.Key then
-      ScriptHub()
       CorrectKeyNotification()
+      Script()
 else
       InCorrectKeyNotification()
 end
