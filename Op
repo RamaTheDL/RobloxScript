@@ -1,0 +1,11 @@
+wait(1)
+
+T = 10000
+
+for i = 1, T do
+
+Wait(5)
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Im Gay", "All")
+
+end
