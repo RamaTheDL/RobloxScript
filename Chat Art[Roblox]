@@ -680,9 +680,9 @@ game.StarterGui:SetCore("SendNotification", {
 
     Title = 'Prefix your message with '.. prefix,
 
-	Text = 'Made by LabGuy94',	Icon = '',
+	Text = 'Made by Rama102031',	Icon = '',
 
-	Duration = 5,
+	Duration = 10,
 
 })
 
