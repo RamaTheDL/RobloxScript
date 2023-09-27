@@ -7,7 +7,7 @@ if game.PlaceId ~= 13864667823 then
 			end
 		end
 	else
-		game:GetService("Players").LocalPlayer:Kick("Error! Game Not Supported!")
+		print("Break in 2")
 	end
 else
     	-- Floating Part
