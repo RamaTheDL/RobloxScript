@@ -1,6 +1,6 @@
 
 game:GetService("RunService"):Set3dRenderingEnabled(true)
-setfpscap(30)
+setfpscap(120)
 local chatEvents = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents")
 local messageDoneFiltering = chatEvents:WaitForChild("OnMessageDoneFiltering")
 for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
@@ -479,5 +479,5 @@ game.StarterGui:SetCore("SendNotification", {
     Title = "Holo's Alt Control";
     Text = "Alt Detected, Loaded!";
     Icon = ""; 
-    Duration = 69420999;
+    Duration = 10;
 })
