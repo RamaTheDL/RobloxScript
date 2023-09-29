@@ -7,7 +7,7 @@
 
 rbxname = "Rama102031"
 local prefix = ";"
-local LPlayer = game.Players.Rama102031 -- your name on my name (maxbrh1)
+local LPlayer = game.Players.AldiUnyumlk -- your name on my name (maxbrh1)
 messageLL = "Helper On Top" 
 speed = 1 --how fast tweengoto is 
 render1 = false --if alts auto unrender when excuted
