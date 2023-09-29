@@ -1,0 +1,10 @@
+-- discord server for updates | https://discord.gg/wZrvdGZDCd
+-- script:
+
+_G.controller = "Rama102031"
+
+alts = {
+    alt1 = "AldiUnyumlk" -- put none if you don't want more alts
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hologrammw/holo-alt-control/main/altcontrol.lua", true))()
