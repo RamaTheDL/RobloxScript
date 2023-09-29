@@ -1,5 +1,5 @@
 
-game:GetService("RunService"):Set3dRenderingEnabled(false)
+game:GetService("RunService"):Set3dRenderingEnabled(true)
 setfpscap(30)
 local chatEvents = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents")
 local messageDoneFiltering = chatEvents:WaitForChild("OnMessageDoneFiltering")
@@ -481,5 +481,3 @@ game.StarterGui:SetCore("SendNotification", {
     Icon = ""; 
     Duration = 69420999;
 })
-
-game:GetService("RunService"):Set3dRenderingEnabled(true)
