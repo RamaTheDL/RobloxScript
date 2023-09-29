@@ -365,6 +365,6 @@ if render1 == true then
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notification";
-	Text = "maxbrh2#9353";
+	Text = "Rama102031#6275";
 	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
 Duration = 16;
