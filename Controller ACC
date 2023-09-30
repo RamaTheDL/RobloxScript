@@ -1,4 +1,4 @@
--- 🤓・For you skids
+-- ðŸ¤“ãƒ»For you skids
 -- We all know you cant code for shit but skidding peoples hard work, is
 -- just not it 
 --I hope you end up on the streets begging for spare change
@@ -7,28 +7,39 @@
 
 rbxname = "Rama102031"
 local prefix = ";"
-local LPlayer = game.Players.AldiUnyumlk -- victim name
+local LPlayer = game.Players.AldiUnyumlk -- your name on my name (maxbrh1)
 messageLL = "Helper on top" 
 speed = 1 --how fast tweengoto is 
 render1 = false --if alts auto unrender when excuted
 resettime = 5.4 --how long it will take to teleport alts back to cordinates noclip command
 
----------------------commands--------------------------------------------------------------------------
---tp teleports alts to you
---msg says message
---sit sits alts
---unsit unsits alts
---rs resets alts
---fling excutes fling scripts on alts remeber to use account for lag
---leave makes alts leave 
---float floats alts
---unfloat unfloats alts
---say makes alts say message
---tweengoto makes alt tween to player
---noclip phase trugh walls
---unclip no noclip
---roast roast people with custum text 
---love Love and compliments
+print([["---------------------commands--------------------------------------------------------------------------
+--tp - teleports alts to you
+--msg - says message
+--sit - sits alts
+--unsit - unsits alts
+--rs - resets alts
+--fling - excutes fling scripts on alts remeber to use account for lag
+--leave - makes alts leave 
+--float - floats alts
+--unfloat - unfloats alts
+--say - makes alts say message
+--tweengoto - makes alt tween to player
+--noclip - phase trugh walls
+--unclip - no noclip
+--roast - roast people with custum text 
+--love - Love and compliments
+--check - check
+--bring - bring alt to you
+--rejoin - rejoin
+--credits - show credits
+--dance1 - /e dance
+--dance2 - /e dance2
+--dance3 - /e dance3
+--wave - wave
+--laugh - laugh
+--spin - spin alt character
+--unspin - unspin
 
 ---------------grapics commands-------------------------------------------------------------------------
 
@@ -39,7 +50,7 @@ resettime = 5.4 --how long it will take to teleport alts back to cordinates nocl
 --render renders 
 --checkmin checks if you have minimezed tabs
 
---------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------"]])
 
 LPlayer.Chatted:Connect(function(msg)
 	msg = msg:lower()
@@ -132,20 +143,64 @@ game.Players.LocalPlayer.Character.Head.Anchored = false
             wait(resettime)
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(cords2)
     end
+        if cmd == "check" then
+            if game.Players.LocalPlayer.Name == "AldiUnyumlk" then
+                chat("Online - 1")
+            end
+    end
+    	if cmd == "bring" then
+    		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.Rama102031.Character.HumanoidRootPart.CFrame
+    end
+    	if cmd == "rejoin" then
+    		chat("Rejoining..")
+            wait(1)
+            local ts = game:GetService("TeleportService")
+            ts:Teleport(game.PlaceId, lp)
+    end
+    if cmd == "credits" then
+            chat("Made by Rama102031")
+    end
+        if cmd == "dance1" then
+            game:GetService("Players"):Chat("/e dance1")
+    end
+        if cmd == "dance2" then
+            game:GetService("Players"):Chat("/e dance2")
+    end
+        if cmd == "dance3" then
+            game:GetService("Players"):Chat("/e dance3")
+    end
+        if cmd == "wave" then
+            game:GetService("Players"):Chat("/e wave")
+	end
+        if cmd == "laugh" then
+            game:GetService("Players"):Chat("/e laugh")
+    end
+        if cmd == "spin" then
+            a = Instance.new("BodyAngularVelocity", game.Players.LocalPlayer.Character.HumanoidRootPart); 
+            a.AngularVelocity = Vector3.new(0, 30, 0); 
+            a.MaxTorque = Vector3.new(0,math.huge,0); 
+            a.P = 1250
+            a.Name = "Spin"
+    end
+        if cmd == "unspin" then
+            if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"):FindFirstChild("Spin") then
+                game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Spin:Destroy()
+            end
+    end
         if cmd == "roast" then
             local Roast = {"You bring everyone so much joy! You know, when you leave the room. But, still",
-            "If your brain was dynamite, there wouldn’t be enough to blow your hat off.",
-            "You are like a cloud. When you disappear, it’s a beautiful day.",
+            "If your brain was dynamite, there wouldnâ€™t be enough to blow your hat off.",
+            "You are like a cloud. When you disappear, itâ€™s a beautiful day.",
             "I thought of you today. It reminded me to take out the trash.",
-            "Don’t be ashamed of who you are. That’s your parent’s job.",
-            "You’re my favorite person… besides every other person I’ve ever met.",
+            "Donâ€™t be ashamed of who you are. Thatâ€™s your parentâ€™s job.",
+            "Youâ€™re my favorite personâ€¦ besides every other person Iâ€™ve ever met.",
             "You are proof that evolution can go in reverse.",
             "If I throw a stick, will you leave?",
             "Were you born this stupid or did you take lessons?",
             "You are proof that god has a sense of humour.",
             "if i had a face like yours, id sue my parents",
             "If I had a dollar every time you shut up, I would give it back as a thank you.",
-            "Yes, I’m fully vaccinated, but I will still not hang out with you.",
+            "Yes, Iâ€™m fully vaccinated, but I will still not hang out with you.",
             "Earth is full. Go home.",
             "A glowstick has a brighter future than you. Lasts longer in bed, too.",
             "Taking a picture of you would put a virus on my phone",
@@ -364,6 +419,6 @@ if render1 == true then
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notification";
-	Text = "maxbrh2#9353";
+	Text = "Rama102031";
 	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 16;
+Duration = 10;
