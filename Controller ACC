@@ -5,9 +5,9 @@
 
 ------------------------important varibles------------------------------------------------------------
 
-rbxname = "AldiUnyumlk"
-local prefix = ":"
-local LPlayer = game.Players.Rama102031 -- your name on my name (maxbrh1)
+rbxname = "Rama102031"
+local prefix = ";"
+local LPlayer = game.Players.AldiUnyumlk -- victim name
 messageLL = "Helper on top" 
 speed = 1 --how fast tweengoto is 
 render1 = false --if alts auto unrender when excuted
