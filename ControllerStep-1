@@ -1,6 +1,3 @@
-
-game:GetService("RunService"):Set3dRenderingEnabled(true)
-setfpscap(120)
 local chatEvents = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents")
 local messageDoneFiltering = chatEvents:WaitForChild("OnMessageDoneFiltering")
 for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
@@ -32,7 +29,7 @@ messageDoneFiltering.OnClientEvent:Connect(function(message)
         elseif message == "?quit" then
             chat("Quitting..")
             wait(1)
-            game.Players.LocalPlayer:Kick("Quitting..")
+            game:Shutdown()
         elseif message == "?c" then
             if game.Players.LocalPlayer.Name == alts.alt1 then
                 chat("alt 1")
@@ -481,3 +478,46 @@ game.StarterGui:SetCore("SendNotification", {
     Icon = ""; 
     Duration = 10;
 })
+
+print([["
+-- // Commands // --
+?bk
+?quit
+?c
+?bring
+?moveto
+?chat [Text]
+?follow
+?unfollow
+?execute
+?orbit
+?unorbit
+?orbitradius
+?orbitspeed
+?lineup
+?rejoin
+?jump
+?reset
+?forcereset
+?fling
+?unfling
+?sit
+?dance1
+?dance2
+?dance3
+?wave
+?laugh
+?spin
+?unspin
+?wings
+?nowings
+?stackup
+?nostack
+?flood [Text]
+?noflood
+?bang [Text]
+?unbang
+?slur
+?removewhite
+?restorewhite
+"]])
