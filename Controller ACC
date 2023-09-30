@@ -9,7 +9,12 @@ alts = {
     alt2 = "",
     alt3 = "",
     alt4 = "",
-    alt5 = ""
+    alt5 = "",
+    alt6 = "",
+    alt7 = "",
+    alt8 = "",
+    alt9 = "",
+    alt10 = ""
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep-1", true))()
