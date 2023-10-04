@@ -1,10 +1,8 @@
--- Good Job
-
 _G.controller = "Rama102031"
 
 alts = {
-    alt1 = "AldiUnyumlk", -- put none if you don't want more alts
-    alt2 = "No_Cheat102",
+    alt1 = "No_Cheat102", -- put none if you don't want more alts
+    alt2 = "",
     alt3 = "",
     alt4 = "",
     alt5 = ""
