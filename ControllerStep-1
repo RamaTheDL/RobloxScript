@@ -69,7 +69,7 @@ messageDoneFiltering.OnClientEvent:Connect(function(message)
 	 ;bang (user)
 	 ;unbang
 	 ;slur (number {1 - 3})"]])
-		elseif message == ";quit" then
+        elseif message == ";quit" then
             chat("Quitting..")
             wait(1)
             game:Shutdown()
