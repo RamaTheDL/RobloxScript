@@ -1,3 +1,24 @@
+-- Good Job
+
+_G.controller = "Rama102031"
+
+alts = {
+    alt1 = "AldiUnyumlk", -- put none if you don't want more alts
+    alt2 = "No_Cheat102",
+    alt3 = "",
+    alt4 = "",
+    alt5 = ""
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hologrammw/holo-alt-control/main/altcontrol.lua", true))()
+
+
+
+
+
+
+
+--[[
 -- ðŸ¤“ãƒ»For you skids
 -- We all know you cant code for shit but skidding peoples hard work, is
 -- just not it 
@@ -422,3 +443,4 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "Rama102031";
 	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
 Duration = 10;
+]]
