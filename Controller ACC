@@ -1,11 +1,16 @@
-_G.controller = "Rama102031"
+while Players:FindFirstChild("Rama102031") do
+  if game.Players:FindFirstChild("AldiUnyumlk") then
+   _G.controller = "Rama102031"
+   
+   alts = {
+       alt1 = "No_Cheat102", -- put none if you don't want more alts
+       alt2 = "AldiUnyumlk",
+       alt3 = "",
+       alt4 = "",
+       alt5 = ""
+   }
 
-alts = {
-    alt1 = "No_Cheat102", -- put none if you don't want more alts
-    alt2 = "AldiUnyumlk",
-    alt3 = "",
-    alt4 = "",
-    alt5 = ""
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep-1"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep-1"))()
+elseif
+  end
+end
