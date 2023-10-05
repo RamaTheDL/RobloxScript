@@ -10,6 +10,19 @@ if game.Players:FindFirstChild("AldiUnyumlk") then
    }
 
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep1"))()
+   _G.controller = "No_Cheat102"
+   
+   alts = {
+       alt1 = "No_Cheat102", -- put none if you don't want more alts
+       alt2 = "AldiUnyumlk",
+       alt3 = "",
+       alt4 = "",
+       alt5 = ""
+   }
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep1"))()
+
+elseif game.Players:FindFirstChild("No_Cheat102") then
 
 elseif game.Players:FindFirstChild("Rama102031") then
    print([[" — // List Commands // —
