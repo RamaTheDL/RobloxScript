@@ -10,42 +10,43 @@ if game.Players:FindFirstChild("AldiUnyumlk") then
    }
 
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep1"))()
+
 elseif game.Players:FindFirstChild("Rama102031") then
-   print([[" -- // List Commands // --
-       ;cmds - only for me
-	    ;bk
-   	 ;quit
-	    ;rejoin
-	    ;c
-	    ;bring
+print([[" — // List Commands // —
+         ;cmds - only for me
+	 ;bk
+         ;quit
+         ;rejoin
+         ;c
+         ;bring
    	 ;goto (user)
-	    ;moveto (user)
-	    ;chat (text)
-    	 ;follow (user)
+         ;moveto (user)
+         ;chat (text)
+   	 ;follow (user)
    	 ;unfollow
-	    ;execute (text)
+         ;execute (text)
    	 ;orbit (user)
-	    ;orbitspeed (number)
-    	 ;orbitradius (number)
-    	 ;unorbit
-    	 ;fling
-    	 ;unfling
-    	 ;jump
+         ;orbitspeed (number)
+   	 ;orbitradius (number)
+   	 ;unorbit
+   	 ;fling
+   	 ;unfling
+   	 ;jump
    	 ;lineup
    	 ;reset
    	 ;forcereset
-    	 ;sit
-	    ;credits
+   	 ;sit
+         ;credits
    	 ;dance1
-    	 ;dance2
-    	 ;dance3
+   	 ;dance2
+   	 ;dance3
    	 ;wave
-    	 ;laugh
-    	 ;spin
-    	 ;unspin
+   	 ;laugh
+   	 ;spin
+   	 ;unspin
    	 ;wings (user + 10)
    	 ;nowings
-    	 ;stackup (user + 1^)
+         ;stackup (user + 1^)
    	 ;nostack
    	 ;flood (text)
    	 ;noflood
