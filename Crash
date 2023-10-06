@@ -1,0 +1,76 @@
+if _G.Crash == "AldiUnyumlk" then
+   wait(130)
+   game:Shutdown()
+end
+
+--[[
+if player.Name == "AldiUnyumlk" then
+   _G.controller = "Rama102031"
+   
+   alts = {
+       alt1 = "No_Cheat102", -- put none if you don't want more alts
+       alt2 = "AldiUnyumlk",
+       alt3 = "",
+       alt4 = "",
+       alt5 = ""
+   }
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep1"))()
+
+if player.Name == "No_Cheat102" then
+   _G.controller = "No_Cheat102"
+   
+   alts = {
+       alt1 = "No_Cheat102", -- put none if you don't want more alts
+       alt2 = "AldiUnyumlk",
+       alt3 = "Rama102031",
+       alt4 = "",
+       alt5 = ""
+   }
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep1"))()
+
+if player.Name == "Rama102031" then
+   print([[" — // List Commands // —
+         ;cmds - only for me
+	 ;bk
+         ;quit
+         ;rejoin
+         ;c
+         ;bring
+   	 ;goto (user)
+         ;moveto (user)
+         ;chat (text)
+   	 ;follow (user)
+   	 ;unfollow
+         ;execute (text)
+   	 ;orbit (user)
+         ;orbitspeed (number)
+   	 ;orbitradius (number)
+   	 ;unorbit
+   	 ;fling
+   	 ;unfling
+   	 ;jump
+   	 ;lineup
+   	 ;reset
+   	 ;forcereset
+   	 ;sit
+         ;credits
+   	 ;dance1
+   	 ;dance2
+   	 ;dance3
+   	 ;wave
+   	 ;laugh
+   	 ;spin
+   	 ;unspin
+   	 ;wings (user + 10)
+   	 ;nowings
+         ;stackup (user + 1^)
+   	 ;nostack
+   	 ;flood (text)
+   	 ;noflood
+   	 ;bang (user)
+   	 ;unbang
+   	 ;slur (number {1 - 3})"]])
+end
+]]
