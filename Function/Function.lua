@@ -1,99 +1,99 @@
 -- // Function // --
-if UIS == true then
+if _G.UIS == true then
  UserInputService = game:GetService("UserInputService")
  print("UserInputService: True")
-elseif UIS == false then
+elseif _G.UIS == false then
  print("UserInputService: False")
 end
 
-if TweenS == true then
+if _G.TweenS == true then
  TweenService = game:GetService("TweenService")
  print("TweenService: True")
-elseif TweenS == false then
+elseif _G.TweenS == false then
  print("TweenService: False")
 end
 
-if HttpS == true then
+if _G.HttpS == true then
  HttpService = game:GetService("HttpService")
  print("HttpService: True")
-elseif HttpS == false then
+elseif _G.HttpS == false then
  print("HttpService: False")
 end
 
-if MarketplaceS == true then
+if _G.MarketplaceS == true then
  MarketplaceService = game:GetService("MarketplaceService")
  print("MarketplaceService: True")
-elseif MarketplaceS == false then
+elseif _G.MarketplaceS == false then
  print("MarketplaceService: False")
 end
 
-if RunS == true then
+if _G.RunS == true then
  RunService = game:GetService("RunService")
  print("RunService: True")
-elseif RunS == false then
+elseif _G.RunS == false then
  print("RunService: False")
 end
 
-if TeleportS == true then
+if _G.TeleportS == true then
  TeleportService = game:GetService("TeleportService")
  print("TeleportService: True")
-elseif TeleportS == false then
+elseif _G.TeleportS == false then
  print("TeleportService: False")
 end
 
-if NetworkC == true then
+if _G.NetworkC == true then
  NetworkClient = game:GetService("NetworkClient")
  print("NetworkClient: True")
-elseif NetworkC == false then
+elseif _G.NetworkC == false then
  print("NetworkClient: False")
 end
 
-if ReplicatedS == true then
+if _G.ReplicatedS == true then
  ReplicatedStorage = game:GetService("ReplicatedStorage")
  print("ReplicatedStorage: True")
-elseif ReplicatedS == false then
+elseif _G.ReplicatedS == false then
  print("ReplicatedStorage: False")
 end
 
-if StarterP == true then
+if _G.StarterP == true then
  StarterPlayer = game:GetService("StarterPlayer")
  print("StarterPlayer: True")
-elseif StarterP == false then
+elseif _G.StarterP == false then
  print("StarterPlayer: False")
 end
 
-if InsertS == true then
+if _G.InsertS == true then
  InsertService = game:GetService("InsertService")
  print("InsertService: True")
-elseif InsertS == false then
+elseif _G.InsertS == false then
  print("InsertService: False")
 end
 
-if ChatS == true then
+if _G.ChatS == true then
  ChatService = game:GetService("Chat")
  print("ChatService: True")
-elseif ChatS == false then
+elseif _G.ChatS == false then
  print("ChatService: False")
 end
 
-if ProxyPS == true then
+if _G.ProxyPS == true then
  ProximityPromptService = game:GetService("ProximityPromptService")
  print("ProxyPromptService: True")
-elseif ProxyPS == false then
+elseif _G.ProxyPS == false then
  print("ProxyPromptService: False")
 end
 
-if StatsS == true then
+if _G.StatsS == true then
  StatsService = game:GetService("Stats")
  print("StatsService: True")
-elseif StatsS == false then
+elseif _G.StatsS == false then
  print("StatsService: False")
 end
 
-if MaterialS == true then
+if _G.MaterialS == true then
  MaterialService = game:GetService("MaterialService")
  print("MaterialService: True")
-elseif MaterialS == false then
+elseif _G.MaterialS == false then
  print("MaterialService: False")
 end
 
