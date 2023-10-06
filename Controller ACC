@@ -9,7 +9,6 @@
    }
 
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep1"))()
-end
 
 --[[
 local Crash = "AldiUnyumlk"
