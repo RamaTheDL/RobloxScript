@@ -1,3 +1,24 @@
+--[[ 
+-- // How To Use // --
+
+_G.UIS = true -- UserInputService
+_G.TweenS = true -- TweenService
+_G.HttpS = true -- HttpService
+_G.MarketplaceS = true -- MarketplaceService
+_G.RunS = true -- RunService
+_G.TeleportS = false -- TeleportService
+_G.NetworkC = true -- Networking
+_G.ReplicatedS = true -- ReplicatedStorage
+_G.StarterP = true -- StarterPlayers
+_G.InsertS = true -- InsertService
+_G.ChatS = false -- ChatService
+_G.ProxyPS = false -- ProxyPromptService
+_G.StatsS = false -- StatsService
+_G.MaterialS = true -- MaterialService
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/Function/Function.lua"))()
+]]
+
 -- // Function // --
 if _G.UIS == true then
  UserInputService = game:GetService("UserInputService")
