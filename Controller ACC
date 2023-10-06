@@ -1,15 +1,4 @@
---[[
-local Crash = "AldiUnyumlk"
-
-if player.Name == Crash then
-   print("Holy Moly")
-   wait(30)
-   game:Shutdown()
-end
-]]
-
-if player.Name == "AldiUnyumlk" then
-   _G.controller = "ChineseGuyFromOhio"
+   _G.controller = "ChineseGuyFromOHIO"
    
    alts = {
        alt1 = "No_Cheat102", -- put none if you don't want more alts
@@ -23,6 +12,15 @@ if player.Name == "AldiUnyumlk" then
 end
 
 --[[
+local Crash = "AldiUnyumlk"
+
+if player.Name == Crash then
+   print("Holy Moly")
+   wait(30)
+   game:Shutdown()
+end
+
+
 if player.Name == "No_Cheat102" then
    _G.controller = "No_Cheat102"
    
@@ -37,7 +35,7 @@ if player.Name == "No_Cheat102" then
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep1"))()
 ]]
 
-if player.Name == "ChineseGuyFromOhio" then
+if player.Name == "ChineseGuyFromOHIO" then
    print([[" — // List Commands // —
          ;cmds - only for me
 	 ;bk
