@@ -1,4 +1,5 @@
-if _G.Crash == "AldiUnyumlk" then
+if player.Name == _G.Crash then
+   print("Holy Moly")
    wait(130)
    game:Shutdown()
 end
