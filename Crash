@@ -1,6 +1,6 @@
 if player.Name == _G.Crash then
    print("Holy Moly")
-   wait(130)
+   wait(30)
    game:Shutdown()
 end
 
