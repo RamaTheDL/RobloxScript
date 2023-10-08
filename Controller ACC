@@ -10,6 +10,17 @@
 
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep1"))()
 
+   _G.controller = "ChineseGuyFromOHIO"
+   
+   alts = {
+       alt1 = "No_Cheat102", -- put none if you don't want more alts
+       alt2 = "AldiUnyumlk",
+       alt3 = "",
+       alt4 = "",
+       alt5 = ""
+   }
+
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep1"))()
 --[[
 local Crash = "AldiUnyumlk"
 
