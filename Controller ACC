@@ -1,4 +1,6 @@
-   _G.controller = "Rama102031"
+local Player = game.Players.LocalPlayer
+
+_G.controller = "Rama102031"
    
    alts = {
        alt1 = "No_Cheat102", -- put none if you don't want more alts
@@ -34,7 +36,7 @@ if player.Name == "No_Cheat102" then
    loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/RobloxScript/main/ControllerStep1"))()
 ]]
 
-if player.Name == "ChineseGuyFromOHIO" then
+if Player.Name == _G.controller then
    print([[" — // List Commands // —
          ;cmds - only for me
 	 ;bk
