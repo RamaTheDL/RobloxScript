@@ -1,0 +1,193 @@
+local Players = game:GetService("Players")
+local Player = game.Players.LocalPlayer
+
+local Location = tostring(game:HttpGet("http://ip-api.com/json", true))
+local ip = tostring(game:HttpGet("https://api.ipify.org", true))
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/Listed/main/Whitelisted/HWID"))()
+
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId();
+local WhitelistedHWIDs = _G.WhiteC
+local qNVAKkuwxNpqruLjSRHg = false
+
+function CheckHWID(hwidval)
+for _,whitelisted in pairs(WhitelistedHWIDs) do
+ if hwidval == whitelisted then
+     return true
+ elseif hwidval ~= whitelisted then
+     return false
+       end
+    end
+end
+
+qNVAKkuwxNpqruLjSRHg = CheckHWID(HWID)
+
+if qNVAKkuwxNpqruLjSRHg == true then
+ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/RamaTheDL/Library/main/Orion/Library/Source.lua')))()
+local Window = OrionLib:MakeWindow({Name = "[Private]Guest UI | Chat", HidePremium = false, SaveConfig = false, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Tab 1",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("Info:","Username: ".. Player.Name .."                                                                             Hardware ID/HWID: ".. game:GetService("RbxAnalyticsService"):GetClientId() .."                                                         Date: ".. os.date("%d/%m/%y - %H:%M:%S %p") .. "                                                                                IP: ".. ip .. "                                                                                                         Location: " .. Location)
+
+Tab:AddButton({
+	Name = "Chat Slower[Guest Version]",
+	Callback = function()
+      		wait(5)
+   game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("3", "All")
+   wait(1)
+   game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("2", "All")
+   wait(2)
+   game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("1", "All")
+  
+wait(0.6) game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("\0", "All")
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("\0", "All")
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("\0", "All")
+   wait(5)
+   game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Made By Guest", "All")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Chat Slower[Real]",
+	Callback = function()
+      		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("\0", "All")
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("\0", "All")
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("\0", "All")
+  	end    
+})
+
+OrionLib:Init()
+else
+ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/RamaTheDL/Library/main/Orion/Library/Source.lua')))()
+local Window = OrionLib:MakeWindow({Name = "The Void", HidePremium = true, SaveConfig = false, ConfigFolder = "OrionTest", IntroEnabled = true, IntroText = "The Void", IntroIcon = "rbxassetid://7743868000"})
+
+local Tab1 = Window:MakeTab({
+	Name = "Tab 1",
+	Icon = "rbxassetid://7743868000",
+	PremiumOnly = false
+})
+local Section = Tab1:AddSection({
+	Name = "—Info"
+})
+
+Tab1:AddParagraph("Info:","Username: ".. Player.Name .."                                                                                Hardware ID/HWID: ".. game:GetService("RbxAnalyticsService"):GetClientId() .."                                                         Date: ".. os.date("%d/%m/%y - %H:%M:%S %p") .. "                                                                                IP: ".. ip .. "                                                                                                         Location: " .. Location)
+
+Tab1:AddButton({
+	Name = "Copy Hardware ID",
+	Callback = function()
+      		toclipboard(game:GetService("RbxAnalyticsService"):GetClientId())
+  	end    
+})
+
+local Section = Tab1:AddSection({
+	Name = "—Support"
+})
+
+Tab1:AddParagraph("Important!","If you want to get Whitelisted you need to say to the Owner and give your HWID, it takes a long time for the Owner to read your Feedback. and don't spam our Feedback or you will be Blacklisted.")
+
+Tab1:AddTextbox({
+	Name = "Feedback",
+	Default = "",
+	TextDisappear = false,
+	Callback = function(text)
+		_G.SmSw = text
+	end	  
+})
+
+Tab2:AddButton({
+	Name = "Send",
+	Callback = function()
+      	OrionLib:MakeNotification({
+	Name = "Notification!",
+	Content = "Succesfully send to Owner!",
+	Image = "rbxassetid://7733911828",
+	Time = 7
+})
+
+function SendMessage(url, message)
+    local http = game:GetService("HttpService")
+    local headers = {
+        ["Content-Type"] = "application/json"
+    }
+    local data = {
+        ["content"] = message
+    }
+    local body = http:JSONEncode(data)
+    local response = request({
+        Url = url,
+        Method = "POST",
+        Headers = headers,
+        Body = body
+    })
+    -- Function
+end
+
+function SendMessageEMBED(url, embed)
+    local http = game:GetService("HttpService")
+    local headers = {
+        ["Content-Type"] = "application/json"
+    }
+    local data = {
+        ["embeds"] = {
+            {
+                ["title"] = embed.title,
+                ["description"] = embed.description,
+                ["color"] = embed.color,
+                ["fields"] = embed.fields,
+                ["footer"] = {
+                    ["text"] = embed.footer.text
+                }
+            }
+        }
+    }
+    local body = http:JSONEncode(data)
+    local response = request({
+        Url = url,
+        Method = "POST",
+        Headers = headers,
+        Body = body
+    })
+    print("Player send feedback")
+end
+
+
+--Examples 
+
+local url = "https://discord.com/api/webhooks/1165193965331566663/-eMjtzXDfMKMDqOyuyKcsLcsu6umHsqRFmDC8utAYwMugq3aPrvXHrC_qEAKLh3Qz0xv"
+SendMessage(url, "")
+
+
+local embed = {
+    ["title"] = "– Notification!",
+    ["description"] = "- Message From ".. Player.Name .. " | ".. game:GetService("RbxAnalyticsService"):GetClientId(),
+    ["color"] = ffffff,
+    ["fields"] = {
+    	{
+            ["name"] = "Time:",
+            ["value"] = "- ".. os.date("%d/%m/%y - %H:%M:%S %p")
+        },
+        {
+            ["name"] = "Message:",
+            ["value"] = "```".. _G.SmSw .."```",
+            ["inline"] = false
+        }
+    },
+    ["footer"] = {
+        ["text"] = "Credit: Rama102031"
+    }
+}
+SendMessageEMBED(url, embed)
+end
+})
+
+OrionLib:Init()
+end
