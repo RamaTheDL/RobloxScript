@@ -1,0 +1,237 @@
+local Taunts = { --add as many as you wish
+  "You're bad at the game bro.",
+  "I'm a bot so if you try to talk to me you're stopid.",
+  "I dont talk to you.",
+  "Noob.",
+  "kid.",
+  "Shutup.",
+  "SHUTUP NOOB.",
+  "LEAVE OR REPORT.",
+  "Bro I going to report to ROBLOX.",
+  "All you do is the same thing.",
+  "I dont talk to noobs.",
+  "\0",
+  "\0",
+  "\0",
+  "\0",
+  "OUT.",
+  "\0",
+  "NOOB.",
+  "Eat batteries.",
+  "\0",
+  "⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻",
+  "...",
+  "Reported.",
+  "Lol noob",
+  "get RKT.",
+  "Um.",
+  "Lol",
+  "\0",
+  "Stop.",
+  ">:(",
+  ":/",
+  ">:C",
+  ">:[",
+  "Kid.",
+  "Stop being dumb.",
+  "Why are you talking to me?",
+  "=D",
+  "Psh.",
+  "Get out.",
+  "Are you bad?",
+  ".....................................",
+  "I think you're stopid dude it's obvious.",
+  "You're pathetic.",
+  "I am a bot programmed to insult people.",
+  "Why are you responding to my chat?",
+  "LOL",
+  "You're not cool.",
+  "You're kidding me.",
+  "DUMB.",
+  "STOPID",
+  "I aim to be the most highly targeted person in this server.",
+  "Your messages aren't even being taken into consideration.",
+  "I don't even know what you're saying.",
+  "Dude...",
+  "Stop now.",
+  "\0",
+  "Go away.",
+  "What's going on?",
+  "You're salty enough to season my food.",
+  "You're wasting time.",
+  "You need to stop.",
+  "Bruh.",
+  "Lame.",
+  "Stop playing ROBLOX",
+  "I programmed a chat bot to start arguments with people and its totally working.",
+  "This is hilarious",
+  "Your reaction is exactly what I wanted to happen",
+  "Turn off your computer",
+  "ILL HACK YOU",
+  "I HAVE YOUR INFORMATION",
+  "Roblox will delete your account tommorow.",
+  "I contacted ROBLOX and told them about you",
+  "I work at ROBLOX i'll be banning you soon.",
+  "I'm telling my boss",
+  "The game doesn't matter",
+  "\0",
+  "Skills dont matter",
+  "I'll be telling the owner of the game.",
+  "What you're doing isnt gonna work.",
+  "It's not working dude.",
+  "Stop trying.",
+  "I think you need to reconsider your actions.",
+  "Why are you talking to a bot bro?",
+  "Eat your graphics card",
+  "I bet you bought your pc from walmart",
+  "Your PC sucks",
+  "NOOOOOOOOOB",
+  "\0",
+  "GET OUT OF MY SERVER",
+  "IM REPORTING"
+ 
+}
+
+
+local Remote = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+
+local players = game.Players:GetChildren()
+local howManyPlayers = #players
+
+local ran = math.random(1,howManyPlayers)
+local chosenOne = players[ran]
+local chance = math.random(1,20)
+local ran2 = math.random(1, #players)
+local chosenpeler = players[ran2]
+
+local function RP()
+  -- random player picker
+  local Players1 = game:GetService("Players"):GetPlayers()
+  local nPlrs = #Players1
+  
+  local RandomPlayer = nil
+  if nPlrs > 0 then
+    RandomPlayer = Players1[math.random(1, nPlrs)]
+  end
+
+  Remote:FireServer(RandomPlayer.DisplayName .." " ..Taunts[math.random(1, #Taunts)],"All")
+end
+
+-- // Library // --
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/RamaTheDL/Library/main/Orion/Library/Source.lua')))()
+local Window = OrionLib:MakeWindow({Name = "", HidePremium = false, SaveConfig = false, ConfigFolder = "Orine", IntroEnabled = true, IntroText = "Toxic UI"})
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://7733798747",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Settings"
+})
+Tab:AddDropdown({
+	Name = "Type Target: ",
+	Default = "",
+	Options = {"Text Only", "Random", "Random Players", "Selected Players"},
+	Callback = function(Value)
+		if Value == "Text Only" then
+_G.TypeTar = "TexO"
+elseif Value == "Random" then
+_G.TypeTar = "Ra"
+elseif Value == "Random Players" then
+_G.TypeTar = "RanG"
+elseif Value == "Selected Players" then
+_G.TypeTar = "SelG"
+wait(1)
+Tab:AddTextbox({
+	Name = "Target Players: ",
+	Default = "",
+	TextDisappear = false,
+	Callback = function(Value)
+		while true do
+          wait()
+          _G.SelectedPlayers = Value
+        end
+	end	  
+})
+end
+	end    
+})
+local Section = Tab:AddSection({
+	Name = "Main"
+})
+Tab:AddToggle({
+	Name = "Enabled/Disabled",
+	Default = false,
+	Callback = function(Value)
+		if Value == true then
+          _G.Start = true
+        elseif Value == false
+         _G.Start = false
+        end
+	end    
+})
+Tab:AddButton({
+	Name = "Result",
+	Callback = function()
+      		local function Insult()
+if _G.TypeTar == "TexO" then
+  Remote:FireServer(Taunts[math.random(1,#Taunts)],"All")
+elseif _G.TypeTar == "Ra" then
+local Lest = {}
+  local function Random1()
+    Remote:FireServer(chosenOne.Name.." " ..Taunts[math.random(1,#Taunts)],"All")
+  end
+  local function Random2()
+    Remote:FireServer(Taunts[math.random(1,#Taunts)],"All")
+  end
+
+local functionList = {} -- make it a list so you can index the functions with a number
+
+for i, v in next, Lest do
+     functionList[i] = v
+end
+
+function RandomR()
+    local chosenFunction = functionList[math.random(1, #functionList)]
+    chosenFunction()
+end
+RandomR()
+elseif _G.TypeTar == "RanG" then
+RP()
+elseif _G.TypeTar == "SelG" then
+  chosenPlayer = _G.SelectedPlayers
+    Remote:FireServer(chosenPlayer .." " ..Taunts[math.random(1, #Taunts)],"All")
+end
+end
+
+local randTime = math.random(1,10)
+
+while _G.Start and wait(randTime) do
+   Insult()
+end
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://7733911621",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Text"
+})
+Tab:AddButton({
+	Name = "Unknow Text",
+	Callback = function()
+      		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("\0", "All")
+  	end    
+})
+Tab:AddButton({
+	Name = "——— Text",
+	Callback = function()
+      		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(" ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻", "All")
+  	end    
+})
+
+OrionLib:Init()
