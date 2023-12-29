@@ -4,6 +4,7 @@ local Taunts = { --add as many as you wish
   "I dont talk to you.",
   "Noob.",
   "kid.",
+  "trash dumb stopid little poop",
   "Shutup.",
   "SHUTUP NOOB.",
   "LEAVE OR REPORT.",
