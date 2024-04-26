@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wxzex/mmsautostratcontinuation/main/recordercode.txt"))()
+
 local RecVersion = "V2.4"
 local ReplicatedStorage = game:GetService("ReplicatedStorage");
 local State = ReplicatedStorage.State;
@@ -372,7 +374,7 @@ spawn(function()
     while task.wait(1) do
         getgenv().AutoSave = getgenv().AutoSave - 1
         if getgenv().AutoSave == 0 then
-            writefile(getgenv().StratName..".txt", getgenv().Generated)
+            writefile("StrategiesX/UserRecorder"..getgenv().StratName..".txt", getgenv().Generated)
             getgenv().AutoSave = 25
         end
     end
