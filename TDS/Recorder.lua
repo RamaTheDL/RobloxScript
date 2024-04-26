@@ -4,6 +4,7 @@ local State = ReplicatedStorage.State;
 local RS = game:WaitForChild('ReplicatedStorage')
 local RSRF = RS:WaitForChild("RemoteFunction")
 local RSRE = RS:WaitForChild("RemoteEvent")
+local GenerateNum = tostring(math.random(1, 5))
 getgenv().Towers = {}
 getgenv().GoldenPerks = {}
 getgenv().Generated = ""
@@ -372,8 +373,12 @@ spawn(function()
     while task.wait(1) do
         getgenv().AutoSave = getgenv().AutoSave - 1
         if getgenv().AutoSave == 0 then
-            writefile("StrategiesX/UserRecorder"..getgenv().StratName..".txt", getgenv().Generated)
-            getgenv().AutoSave = 25
+            if isfile("StrategiesX/UserRecorder/"..getgenv().StratName..".txt") then
+				writefile("StrategiesX/UserRecorder/"..getgenv().StratName..GenerateNum..".txt", getgenv().Generated)
+            elseif not isfile("StrategiesX/UserRecorder/"..getgenv().StratName..".txt") then
+			    writefile("StrategiesX/UserRecorder/"..getgenv().StratName..".txt", getgenv().Generated)
+			end
+			getgenv().AutoSave = 25
         end
     end
 end)
