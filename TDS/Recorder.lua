@@ -365,7 +365,11 @@ getgenv().Generated = getgenv().Generated .. getgenv().APIVar..":SellAllFarms( "
 end)
 w:Section("\\/ SAVE \\/")
 w:Button("Save", function()
-    writefile(getgenv().StratName..".txt", getgenv().Generated)
+    if isfile("StrategiesX/UserRecorder/"..getgenv().StratName..".txt") then
+        writefile("StrategiesX/UserRecorder/"..getgenv().StratName..GenerateNum..".txt", getgenv().Generated)
+    elseif not isfile("StrategiesX/UserRecorder/"..getgenv().StratName..".txt") then
+	writefile("StrategiesX/UserRecorder/"..getgenv().StratName..".txt", getgenv().Generated)
+    end
 end)
 w:Section("Auto_Save")
 spawn(function()
@@ -374,11 +378,11 @@ spawn(function()
         getgenv().AutoSave = getgenv().AutoSave - 1
         if getgenv().AutoSave == 0 then
             if isfile("StrategiesX/UserRecorder/"..getgenv().StratName..".txt") then
-				writefile("StrategiesX/UserRecorder/"..getgenv().StratName..GenerateNum..".txt", getgenv().Generated)
+		writefile("StrategiesX/UserRecorder/"..getgenv().StratName..GenerateNum..".txt", getgenv().Generated)
             elseif not isfile("StrategiesX/UserRecorder/"..getgenv().StratName..".txt") then
-			    writefile("StrategiesX/UserRecorder/"..getgenv().StratName..".txt", getgenv().Generated)
-			end
-			getgenv().AutoSave = 25
+		writefile("StrategiesX/UserRecorder/"..getgenv().StratName..".txt", getgenv().Generated)
+	    end
+	    getgenv().AutoSave = 25
         end
     end
 end)
