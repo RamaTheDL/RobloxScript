@@ -1,5 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/wxzex/mmsautostratcontinuation/main/recordercode.txt"))()
-
 local RecVersion = "V2.4"
 local ReplicatedStorage = game:GetService("ReplicatedStorage");
 local State = ReplicatedStorage.State;
