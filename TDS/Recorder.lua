@@ -365,16 +365,16 @@ getgenv().Generated = getgenv().Generated .. getgenv().APIVar..":SellAllFarms( "
 end)
 w:Section("\\/ SAVE \\/")
 w:Button("Save", function()
-    writefile("StrategiesX/UserRecorder/"..getgenv().StratName..".txt", getgenv().Generated)
+    writefile("StrategiesX/UserRecorder/[TDS]"..getgenv().StratName..".txt", getgenv().Generated)
 end)
 w:Section("Auto_Save")
 spawn(function()
-    getgenv().AutoSave = 1
+    getgenv().AutoSave = 3
     while task.wait(1) do
         getgenv().AutoSave = getgenv().AutoSave - 1
         if getgenv().AutoSave == 0 then
-            writefile("StrategiesX/UserRecorder/"..getgenv().StratName..".txt", getgenv().Generated)
-	    getgenv().AutoSave = 1
+            writefile("StrategiesX/UserRecorder/[TDS]"..getgenv().StratName..".txt", getgenv().Generated)
+	    getgenv().AutoSave = 3
         end
     end
 end)
