@@ -49,7 +49,7 @@ StratXLibrary.RestartCount = 0
 StratXLibrary.CurrentCount = StratXLibrary.RestartCount
 StratXLibrary.MultiStratEnabled = getgenv().IsMultiStrat or false
 StratXLibrary.MultiStratEnabled = true
-getgenv().GameSpoof = "Lobby"]]
+getgenv().GameSpoof = "Lobby"
 
 StratXLibrary.UtilitiesConfig = {  
     Camera = tonumber(getgenv().DefaultCam) or 2,
