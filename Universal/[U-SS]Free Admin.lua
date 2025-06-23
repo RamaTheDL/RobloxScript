@@ -614,4 +614,332 @@ end
 function UnequipTools()
 pcall(function()
 for fucker, cock in pairs(LocalPlayer.Character:GetDescendants()) do
-if cock:IsA("Tool")
+if cock:IsA("Tool") then
+repeat wait() until cock ~= nil
+cock.Parent = LocalPlayer.Backpack
+end
+end
+end)
+end
+
+local lox = true
+local chaos = false
+local breakit = false
+local spammer = false
+local spammer2 = false
+
+-- // Custom CMDS // --
+
+cht = LocalPlayer.Chatted:Connect(function(msg)
+if msg:sub(1, 11) == AdminPrefix.."customcmds" then
+print([[
+         
+// Meaning of each words //
+(prefix)
+[Means what symbol called at first line]
+(un-cmd)
+[Means it could be stopped or started deciding with cmd or uncmd]
+(name, other, all me)
+[Could be used on other people or yourself]
+
+  // List of custom commands //
+
+[prefix(spamtime) (number)]
+Sets the spam cmd button delay, if number lower than 1 it would be broken
+
+[prefix(un-mblind)] blind people with message, very annoying (cmd used : sm m)
+
+[prefix(slash) (name), other] Makes them killed by a gear (cmds used : gear me)
+
+[prefix(rocket) (name) other, all, me] KABOOM PEOPLE WITH ROCKETS (cmds used : gear me)
+
+[prefix(un-chaos)] Makes the server chaos by lateral rockets everywhere (cmds used : gear me)
+
+[prefix(un-spamturkey)] Spams turkey as you like and unclearable like these exists by itself (cmds used : gear me) (CANNOT BE AVOID BY CLEAR COMMAND)
+
+[prefix(un-spamclone)] If you watch anime you will know, spams stupid clones that walk everywhere (cmds used : gear me) (CANNOT BE AVOID BY CLEAR COMMAND)
+
+[prefix(zawarudo)] freezes others and play a zawarudo sound (cmds used : music, freeze)
+
+[prefix(stun) (name), other] Makes them stunned by laser electrocution yes (cmds used : gear me)
+
+(COMMANDS THAT WORK ONLY ON FREE ADMIN GAME WITH 5K PLAYERS PLUS)
+
+// COMMANDS ONLY FOR FREE ADMIN //
+
+[prefix(crash)] make the game unplayable (cmds used : nothing only fireclickdetector, works on free admin only)
+
+]])
+Notify("Fedoratum Admin Abuser", "Type /console to check customcmds", 4)
+elseif msg:sub(1, 7) == AdminPrefix.."mblind" then
+haha = false
+bruv = false
+losing = false
+opening = true
+debonce = true
+if opening then
+opening = false
+spawn(function()
+while debonce and wait(2.3) do
+game.Players:Chat(hider..AdminPrefix.."m "..AdminPrefix.."sm")
+end
+end)
+end
+
+elseif msg:sub(1, 9) == AdminPrefix.."unmblind" then
+debonce = false
+opening = true
+
+elseif msg:sub(1, 8) == AdminPrefix.."unchaos" then
+chaos = false
+ClearTools()
+
+elseif msg:sub(1, 6) == AdminPrefix.."chaos" then
+losing = false
+bruv = false
+haha = false
+losing = false
+spammer = false
+spammer2 = false
+
+pcall(function()
+chaos = true
+game.Players:Chat(hider..AdminPrefix.."gear "..plrname.." 169602103")
+task.wait(1.5)
+spawn(function()
+      while wait() and chaos do
+LocalPlayer.Backpack.RocketJumper.FireRocket:FireServer(Vector3.new(math.random(-200,200),math.random(0,200),math.random(-200,200)),Vector3.new(math.random(-200,200), math.random(0,50), math.random(-200,200))
+)
+if chaos == false then
+break
+end
+  end
+end)
+end)
+
+elseif msg:sub(1, 9) == AdminPrefix.."spamtime" then
+spamtime = tostring(msg:sub(11))
+
+elseif msg:sub(1, 6) == AdminPrefix.."slash" then
+haha = false
+bruv = false
+losing = false
+spammer = false
+spammer2 = false
+chaos = false
+pcall(function()
+breakit = false
+ClearTools()
+task.wait(1.5)
+game.Players:Chat(hider..AdminPrefix.."gear "..plrname.." 68539623")
+task.wait(1.5)
+EquipTools()
+for _, p in pairs(GetPlr(tostring(msg:sub(8)))) do
+if game.Players[p].Character then
+spawn(function()
+while wait() do
+if game.Players[p].Character:FindFirstChild("HumanoidRootPart") ~= nil then
+ActivateTools()
+game.Players[p].Character.HumanoidRootPart.CFrame = LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(1, 0, -2)
+ end
+if breakit then
+break
+end
+end
+end)
+end
+end
+task.wait(2)
+ClearTools()
+breakit = true
+end)
+
+elseif msg:sub(1, 9) == AdminPrefix.."zawarudo" then
+spammer2 = false
+spammer = false
+chaos = false
+losing = false
+bruv = false
+haha = false
+game.Players:Chat(hider..AdminPrefix.."music 5129686200")
+task.wait(4)
+for i, player in pairs(Players:GetPlayers()) do
+if player.Name ~= plrname then
+game.Players:Chat(hider..AdminPrefix.."freeze ".. player.Name)
+end
+end
+task.wait(1)
+game.Players:Chat(hider..AdminPrefix.."music 0")
+
+
+
+elseif msg:sub(1, 5) == AdminPrefix.."stun" then
+haha = false
+bruv = false
+losing = false
+spammer = false
+spammer2 = false
+chaos = false
+pcall(function()
+breakit = false
+ClearTools()
+task.wait(1.5)
+game.Players:Chat(hider..AdminPrefix.."gear "..plrname.." 82357123")
+task.wait(1.5)
+EquipTools()
+for _, p in pairs(GetPlr(tostring(msg:sub(7)))) do
+if game.Players[p].Character then
+spawn(function()
+while wait() do
+if game.Players[p].Character:FindFirstChild("HumanoidRootPart") ~= nil then
+ActivateTools()
+game.Players[p].Character.HumanoidRootPart.CFrame = LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(1, 0, -2)
+if breakit then
+break
+end
+ end
+end
+end)
+end
+end
+task.wait(2)
+ClearTools()
+breakit = true
+end)
+
+elseif msg:sub(1, 13) == AdminPrefix.."unspamturkey" then
+spammer = false
+ClearTools()
+
+elseif msg:sub(1, 12) == AdminPrefix.."unspamclone" then
+spammer2 = false
+UnequipTools()
+task.wait(1)
+ClearTools()
+
+elseif msg:sub(1, 11) == AdminPrefix.."spamturkey" then
+spammer = true
+bruv = false
+haha = false
+losing = false
+spammer2 = false
+chaos = false
+
+ClearTools()
+
+task.wait(1)
+
+spawn(function()
+while wait() and spammer do
+game.Players:Chat(hider..AdminPrefix.."gear "..plrname.." 40504724")
+task.wait(1.5)
+EquipTools()
+task.wait(0.3)
+ActivateTools()
+ActivateTools()
+ActivateTools()
+ActivateTools()
+task.wait(0.3)
+ClearTools()
+end
+end)
+
+elseif msg:sub(1, 10) == AdminPrefix.."spamclone" then
+spammer2 = true
+bruv = false
+haha = false
+losing = false
+spammer = false
+chaos = false
+
+ClearTools()
+task.wait(1)
+spawn(function()
+while wait() and spammer2 do
+game.Players:Chat(hider..AdminPrefix.."gear "..plrname.." 72644644")
+task.wait(1.5)
+EquipTools()
+task.wait(0.3)
+ActivateTools()
+ActivateTools()
+ActivateTools()
+ActivateTools()
+task.wait(0.3)
+UnequipTools()
+task.wait(1)
+ClearTools()
+end
+end)
+
+elseif msg:sub(1, 7) == AdminPrefix.."rocket" then
+haha = false
+bruv = false
+losing = false
+spammer = false
+spammer2 = false
+pcall(function()
+lox = true
+game.Players:Chat(hider..AdminPrefix.."gear "..plrname.." 169602103")
+task.wait(1.5)
+for _, fg in pairs(GetPlayer(tostring(msg:sub(9)))) do
+if game.Players[fg].Character:FindFirstChild("HumanoidRootPart") ~= nil then
+spawn(function()
+while wait() and lox do
+local args = {
+   [1] = game.Players[fg].Character.HumanoidRootPart.Position - Vector3.new(0,1,0),
+   [2] = game.Players[fg].Character.HumanoidRootPart.Position
+}
+LocalPlayer.Backpack.RocketJumper.FireRocket:FireServer(unpack(args))
+end
+end)
+end
+end
+task.wait(4)
+lox = false
+ClearTools()
+end)
+
+--[[
+Anyone if they believe i fucking did not create the crash script, you are stupid. This is a reference to a free script on youtube called: Free Admin Server Slower, video by AverageSC.
+
+if who said is the creator and saying me for stealing your idea, this is not your fucking idea. We had the same idea asshole. But im more earlier
+--]]
+
+-- // Exclusive Crash Script // --
+
+elseif msg:sub(1, 6) == AdminPrefix.."crash" then
+spawn(function()
+while wait() do
+if fireclickdetector then
+  for i,v in pairs(workspace:GetDescendants()) do
+   if v:IsA("ClickDetector") then
+           v.MaxActivationDistance = math.huge
+    fireclickdetector(v)
+   end
+  end
+end
+end
+end)
+        end
+end)
+
+Exit.MouseButton1Click:Connect(function()
+ ScreenGui:Destroy()
+losing = false
+haha = false
+bruv = false
+spammer = false
+breakit = true
+spammer2 = false
+chaos = false
+cht:Disconnect()
+rghes:Disconnect()
+end)
+
+Notify("Fedoratum Admin Abuser", "Anti Kick And Mute Loaded", 4)
+
+task.wait(4)
+
+Notify("Fedoratum Admin Abuser", "Type prefix(customcmds) to see custom commands", 4)
+
+-- // Fedoratum was here // --
