@@ -18,14 +18,14 @@ Since im a nice guy i will leave this open source hahehahee, credits to me guys 
 Made By Fedoratum
 --]]
 -- // Set your admin prefix // --
-local AdminPrefix = ";"
+local AdminPrefix = _G.Prefix
 -- // It will automatically set it // --
 -- It does not accept more than 2 characters
 -- or an unknown character
 
 -- // Option // --
 
-local AffectAllPlayer = false
+local AffectAllPlayer = _G.AffectAll
 -- false affects not yourself but others
 -- true affects everyone including you
 
